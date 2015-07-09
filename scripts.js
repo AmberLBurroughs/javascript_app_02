@@ -1,4 +1,6 @@
-alert(Help me fix this program!");
+console.log("Start Program");
+alert("Help me fix this program!");
 alert(Can you get this message to appear?);
 document.write("<h2>My first JavaScript program</h2>");
-document.wrong("<p>I'm practicing 'debugging'.</p>");
+document.write("<p>I'm practicing 'debugging'.</p>");
+console.log("End Program");
