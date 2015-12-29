@@ -5,7 +5,7 @@ give a score according to how many are correct
 */
 
 // 5 questions & a score of zero
-// test is questions 1-5 are correct adds 1 point to score 
+// test is questions 1-5 are correct adds 1 point to score
 var score = 0;
 
 var answerOne = prompt('what color is a banana?');
@@ -32,17 +32,15 @@ if ( answerFive.toUpperCase() === 'TUESDAY'){
   score += 1;
 }
 
-
 document.write('<h3>You answered ' + score + ' questions correctly!</h3>');
 
-// according to what the end score is player is ranked 
+// according to what the end score is player is ranked
 if (score === 5) {
-  document.write('<h2>You earned a <strong>gold crown</strong>.</h2>');
+  document.write('<h2>You answered all 5 questions correct. You earned a <strong>gold crown</strong>.</h2>');
 }else if (score === 3 || score === 4 ) {
-  document.write('<h2>You earned a <strong>silver crown</strong>.</h2>');
+  document.write('<h2>You answered ' + score + '/5 questions correctly. You earned a <strong>silver crown</strong>.</h2>');
 }else if (score === 1 || score === 2 ) {
-  document.write('<h2>You earned a <strong>bronze crown</strong>.</h2>');
+  document.write('<h2>You answered ' + score + '/5 questions correctly. You earned a <strong>bronze crown</strong>.</h2>');
 } else {
   document.write('<h2>You did not answer any of the questions correctly :( </h2>');
 }
- 
